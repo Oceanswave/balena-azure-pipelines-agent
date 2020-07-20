@@ -1,0 +1,5 @@
+applicationEnvironmentVariables:
+    - AZP_AGENT_NAME: ''
+    - AZP_POOL: '{Pool name for the agent to join}'
+    - AZP_URL: 'https://dev.azure.com/{your-organization}'
+    - AZP_TOKEN: '{If you chose an auth type of pat, then your pat}'

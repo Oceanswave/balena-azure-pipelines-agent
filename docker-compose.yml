@@ -1,0 +1,16 @@
+version: '2.1'
+
+volumes:
+  azure_pipelines_agent:
+
+services:
+  azure_pipelines_agent:
+    build: ./azure-pipelines-agent
+    privileged: true
+    volumes:
+      - 'azure_pipelines_agent:/_work'
+    environment:
+      - AZP_AGENT_NAME=${AZP_AGENT_NAME}
+      - AZP_POOL=${AZP_POOL}
+      - AZP_URL=${AZP_URL}
+      - AZP_TOKEN=${AZP_TOKEN}
