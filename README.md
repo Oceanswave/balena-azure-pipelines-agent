@@ -42,3 +42,8 @@ For more information, visit https://docs.microsoft.com/en-us/azure/devops/pipeli
 The Azure CLI is not currently part of this image due to issues building on aarch64 hardware (cloning and building results in a bad image, pip install azure-cli stalls on pynacl)
 
 > Fork, PR, or submit an issue if you'd like to see your dev tool added to this list.
+
+
+### Use case
+
+Facilitates devops with self-hosted aarch64 Azure Pipeline Agents when targeting IoT hardware
