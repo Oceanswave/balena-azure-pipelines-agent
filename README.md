@@ -1,6 +1,6 @@
 # balena-azure-pipelines-agent
 
-If you're looking for a way to quickly and easily add and manage a self-hosted Azure Pipelines Agents running on a Raspberry Pi or any [aarch64-based hardware](https://www.balena.io/docs/reference/base-images/devicetypes/), you've come to the right place. 
+If you're looking for a way to quickly and easily add and manage self-hosted Azure Pipelines Agents to build aarch64 binaries whether they be running on a x86_64 host or even running on a Raspberry Pi or any [aarch64-based hardware](https://www.balena.io/docs/reference/base-images/devicetypes/), you've come to the right place. 
 
 This project is a [balenaCloud](https://www.balena.io/cloud) stack with the following services:
 
@@ -46,4 +46,8 @@ The Azure CLI is not currently part of this image due to issues building on aarc
 
 ### Use case
 
-Facilitates devops with self-hosted aarch64 Azure Pipeline Agents when targeting IoT hardware
+Facilitates/speeds up devops with self-hosted arm/aarch64 Azure Pipeline Agents when targeting IoT hardware. With balena-azure-pipelines-agent it's easy to stand up a agent that is able to build software targeted for arm/aarch64 hardware on hardware that's much more powerful than the target device - while a v8 build on a Raspberry Pi 3 might take days, a regularly sized vm or dedicated build machine running this build agent can chew through a build in a few minutes.
+
+It's also possible to utilize balena-azure-pipelines-agent running on actual IoT arm/aarch64 devices as pipeline agents for advanced scenarios where the hardware required isn't available through emulation - or using a fleet of devices that are able to run generalized sets of tasks orchestrated through Azure Pipelines.
+
+Much thanks to Balena for providing the base images running QEMU and such an awesome set of tools.
