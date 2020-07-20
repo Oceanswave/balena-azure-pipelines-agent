@@ -46,9 +46,9 @@ The Azure CLI is not currently part of this image due to issues building on aarc
 
 ### Use case
 
-Facilitates/speeds up devops with self-hosted arm/aarch64 Azure Pipeline Agents when targeting IoT hardware. With balena-azure-pipelines-agent it's easy to stand up a fleet of auto-updating agents that are able to build software targeted for arm/aarch64 hardware on hardware that's much more powerful than the target device. For instance, while a v8 build on a Raspberry Pi 3 might take days, a regularly sized vm or dedicated build machine running this build agent can chew through a build in a few minutes.
+Facilitates/speeds up devops with self-hosted arm/aarch64 Azure Pipeline Agents when targeting IoT hardware via QEMU emulation. With balena-azure-pipelines-agent it's easy to stand up a fleet of auto-updating agents that are able to build software targeted for arm/aarch64 hardware on hardware that's much more powerful than the target device. For instance, while a v8 build on a Raspberry Pi 3 might take days, a regularly sized vm or dedicated build machine running the Azure Pipeline Agent can chew through a build in a few minutes.
 
-It's also possible to utilize balena-azure-pipelines-agent with Balena's services running on actual IoT arm/aarch64 devices as pipeline agents for advanced scenarios where the hardware required isn't available through emulation - allowing a fleet of devices that are able to run generalized sets of tasks orchestrated through Azure Pipelines.
+It's also possible to utilize balena-azure-pipelines-agent with Balena running on actual IoT arm/aarch64 devices for advanced scenarios where the hardware required isn't available through emulation - allowing a fleet of devices that are able to run generalized sets of tasks orchestrated through Azure Pipelines.
 
 
 Much thanks to Balena for providing the base images running QEMU and such an awesome set of tools.
