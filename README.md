@@ -10,7 +10,7 @@ This project is a [balenaCloud](https://www.balena.io/cloud) stack with the foll
 
 You can one-click-deploy this project to balena using the button below:
 
-[![](https://balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy)
+[![](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy)
 
 ## Manual Deployment
 
